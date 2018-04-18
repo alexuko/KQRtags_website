@@ -1,15 +1,16 @@
 /*body*/
 #main {
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0px 0px 5% 0px;
+    margin: 0px 0px 10% 0px;
     text-align: center;
     font-size: 28px;
     font-weight: bold;
     background: linear-gradient(rgba(7, 255, 55, 0.85), #0c63a3);
+    background-size: cover;
     height: 100%;
-    padding: 10%;
-    
+    padding: 10% 1% 10% 1%;
 }
+
 #box {
 /*    background: aqua;*/
     margin: 5px;
@@ -20,6 +21,7 @@
     padding: 3px;
     
 }
+
 #containerTop{
 /*    background: green;*/
     margin: inherit;
@@ -27,7 +29,7 @@
     font-size: 22px;
     font-weight: bold;
     height: auto;
-    padding: inherit;
+    padding: 2px;
 }
 #containerMiddle {
 /*    background: blue;*/
