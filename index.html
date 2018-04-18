@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/distribution.css">
+    <link rel="stylesheet" type="text/css" href="css/items.css">
+</head>
+<body id='main'>Welcome!<br>KQR TAGS
+<?php
+echo 'Hello';
+
+?>
+
+<?php
+echo 'Hello';
+
+?>
+
+    <div id='box'>
+        
+        <div id='containerTop'>
+            <button onclick="showAbout()"   style="width:auto;">ABOUT</button>
+            <button onclick="showLogin()"   style="width:auto;">LOGIN</button>
+            <button onclick="showContact()" style="width:auto;">CONTACT</button><br>
+        </div>
+        
+        
+        <div id='containerMiddle' style="display: inline">My-Info
+            <div id='display' style="display: none">Display-info</div><br>
+        </div>
+        
+        
+        <div id='containerButtom' style="display: inline">
+            <a href="downloads/kqrApp.apk" download>
+            <img id='logo_download'src="img/kqrApp.png"style="width:auto;"></a>
+                <br>
+                    <a href="downloads/kqrApp.apk" download>
+                    <button style="width:auto;">DOWNLOAD KQR_APP</button></a>
+        </div>
+        
+            
+    </div>
+<!--*******************************************************  LOGIN - FORM *********************************************************   -->
+   <!-- The Modal -->
+<div id="myForm" class="modal">
+  <span onclick="document.getElementById('myForm').style.display='none'" 
+class="close" title="Close Modal">&times;</span>
+
+  <!-- Modal Content -->
+<!--  <form class="modal-content animate" action="/action_page.php">-->
+  <form class="login modal-content animate " >
+    <div class="imgcontainer">
+      <img src="img/no_image_user.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label ><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="username" required>
+      <label ><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="password" required>
+      <button class='logInButton' type="submit">Login</button>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('myForm').style.display='none'" class="cancelbtn logInButton">Cancel</button>
+    </div>
+  </form>
+</div>
+<!--*************************************************** END - LOGIN - FORM *********************************************************   -->
+</body>
+     <script type="text/javascript" src='js/kqr_app.js'></script>
+</html>

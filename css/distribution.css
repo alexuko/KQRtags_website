@@ -1,0 +1,51 @@
+/*body*/
+#main {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px 0px 5% 0px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    background: linear-gradient(rgba(7, 255, 55, 0.85), #0c63a3);
+    height: 100%;
+    padding: 10%;
+    
+}
+#box {
+/*    background: aqua;*/
+    margin: 5px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    height: auto;
+    padding: 3px;
+    
+}
+#containerTop{
+/*    background: green;*/
+    margin: inherit;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    height: auto;
+    padding: inherit;
+}
+#containerMiddle {
+/*    background: blue;*/
+    margin:  inherit;
+    height: auto;
+    text-align: left;
+    font-size: 20px;
+    padding: inherit;
+}
+
+#containerButtom {
+/*    background: yellow;*/
+    margin: inherit;
+    height: auto;
+    text-align: left;
+    font-size: 22px;
+    padding: inherit;
+}
+    
+
+
