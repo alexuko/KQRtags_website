@@ -15,7 +15,8 @@ function showContact(){
                                                     +   '<p>Alberto</p>'
                                                     +   '<p>Camila S</p>'
                                                     +   '<p>Camila F</p>';
-    }
+}
+
 function showLogin(){
     document.getElementById('containerMiddle').style.display = 'none';
     document.getElementById('myForm').style.display='block';
@@ -34,6 +35,5 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
-//containerTop
-//containerMiddle
-//containerButtom
+
+

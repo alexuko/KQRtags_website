@@ -26,16 +26,15 @@
 /*    background: green;*/
     margin: inherit;
     text-align: center;
-    font-size: 22px;
+    font-size: 10px;
     font-weight: bold;
     height: auto;
-    padding: 2px;
+    padding: 50px 20px 30px 20px  ;
 }
 #containerMiddle {
 /*    background: blue;*/
     margin:  inherit;
     height: auto;
-    text-align: left;
     font-size: 20px;
     padding: inherit;
 }

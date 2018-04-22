@@ -1,3 +1,4 @@
+
 <?php
 session_start();
 			
@@ -28,6 +29,13 @@ session_start();
                             $userType = $check['utype'];
 					        $userStatus = $check['ustatus'];
                         
+
+                            $sql = "INSERT INTO id4845629_kqrtags.logs (ltime, laction, uid) VALUES ( CURRENT_TIMESTAMP, 'LOGIN', ?)";
+                                        $q = $DBH->prepare($sql);
+                                        $q->bindParam(1,$_SESSION['id']);
+                                        $q->execute();
+
+
                         if(($userType == 'admin') && ($userStatus == 'active' )){
                            header('Location: admin.php');
                         
@@ -36,15 +44,19 @@ session_start();
                             
                         }else{
 
-                            echo '<script type="text/javascript"> alert("invalid user");</script>';
+                            echo '<script type="text/javascript"> alert("Acces Denied - contact your KQR-Provider");</script>';
                             
                         }
                     }else {
                         echo '<script type="text/javascript"> alert("No data");</script>';
                     }
-                    
-				}catch(PDOException $e){echo "Error: ".$e;}
+                    $DBH = null;
+				}catch(PDOException $e){
+                    echo "Error: ".$e;
+                    $DBH = null;
+                }
 			}
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -60,6 +72,9 @@ session_start();
 </head>
 <body id='main'>Welcome!<br>KQR TAGS
 <div id='box'>
+
+<!--        <img id='logoKQRtags'src="img/no_image_user.png"style="width:auto;">-->
+        
         <div id='containerTop'>
             <button class="mainButtons" onclick="showAbout()"   style="width:auto;">ABOUT</button>
             <button class="mainButtons" onclick="showLogin()"   style="width:auto;">LOGIN</button>
