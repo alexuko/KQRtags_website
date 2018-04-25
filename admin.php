@@ -1,6 +1,6 @@
 <?php
 session_start();
-
+// 
 ?>
 <!DOCTYPE html>
 <html>
@@ -22,24 +22,22 @@ session_start();
                 <button class="userButtons" onclick="showUpdKey()"   style="width:auto;">UPDATE</button>
                 <button class="userButtons" onclick="showLogKey()" style="width:auto;">KQR USAGE</button>
                 <button class="userButtons" onclick="showLisKey()" style="width:auto;">KQR LIST</button> 
-                <a href="logout.php">
-                    <button class="warningBtn" onclick="showLogOut()" style="width:auto;">LOGOUT</button>
-                </a>
                 
-
         </div>
                 
         <div id='containerMiddle'   style="display: inline"><br>
             <div id='disCreate'     style="display: none"><?php include('create.php');?></div>
             <div id='disDelete'     style="display: none"><?php include('remove.php');?></div>
             <div id='disUpdate'     style="display: none"><?php include('update.php');?></div>
-            <div id='disList'       style="display: none"><?php include('qrList.php');?> </div>
+            <div id='disList'       style="display: none"><?php include('qrList.php')?></div>
             <div id='disLogs'       style="display: none"><?php include('logs.php');?></div>
             
         </div>
         
         <div id='containerButtom' style="display: inline">
-        
+            <a href="logout.php">
+                    <button class="warningBtn" onclick="showLogOut()" style="width:auto;">LOGOUT</button>
+                </a>
         </div>
     </div>
 

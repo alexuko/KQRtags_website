@@ -1,47 +1,50 @@
 /*body*/
 #main {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0px 0px 10% 0px;
+    font-family: Courier New, Bookman, Trebuchet MS, Arial, Helvetica, sans-serif;
+    margin: 0px 0px 0px 5%;
     text-align: center;
-    font-size: 28px;
+    color: rgb(39, 72, 65);
+    letter-spacing: 5px;
+    font-size: 40px;
     font-weight: bold;
     background: linear-gradient(rgba(7, 255, 55, 0.85), #0c63a3);
     background-size: cover;
     height: 100%;
-    padding: 10% 1% 10% 1%;
+    padding: 5% 1% 50% 1%;
 }
 
 #box {
-/*    background: aqua;*/
-    margin: 5px;
-    text-align: center;
+    margin: 10% 10% 25% inherit; 
     font-size: 25px;
     font-weight: bold;
     height: auto;
-    padding: 3px;
+    padding: 20px 30px 10px 10px;
+    color: blanchedalmond;
     
 }
 
 #containerTop{
 /*    background: green;*/
-    margin: inherit;
+    margin: 0% 2px 0px 20px;
     text-align: center;
     font-size: 10px;
     font-weight: bold;
     height: auto;
-    padding: 50px 20px 30px 20px  ;
+    padding: 0px 0 30px 0;
 }
 #containerMiddle {
 /*    background: blue;*/
-    margin:  inherit;
+    margin:  0%;
     height: auto;
     font-size: 20px;
-    padding: inherit;
+    padding: 0%;
+    text-align: left;
+    text-indent: inherit;
 }
 
 #containerButtom {
 /*    background: yellow;*/
-    margin: inherit;
+    margin: 20% inherit inherit inherit;
     height: auto;
     text-align: left;
     font-size: 22px;

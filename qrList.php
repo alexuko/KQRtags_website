@@ -26,7 +26,7 @@ include('connection.php');
                                         <td>'.$keyName.'</td>
                                         <td>'.$keyLoc.'</td>
                                         <td>'.$keyDesc.'</td>
-                                        <td><button value="'.$keyID.'"class="printBtn userButtons" onclick="printQRcode('.$keyID.')">Print-QR-code</button></td>
+                                        <td><button value="'.$keyID.'"class="printBtn userButtons" onclick="printQRcode('.$keyID.')">Print</button></td>
                                      </tr>';
                         }
             echo '</table >';
